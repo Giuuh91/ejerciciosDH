@@ -42,7 +42,7 @@ public class PersonajeAdapter extends RecyclerView.Adapter {
         Personaje personaje = listaDePersonajes.get(position);
         PersonajeViewHolder personajeViewHolder = (PersonajeViewHolder) holder;
         personajeViewHolder.bind(personaje);
-        
+
     }
 
     @Override
