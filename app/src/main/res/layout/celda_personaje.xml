@@ -24,14 +24,14 @@
             android:text="Nombre personaje"
             android:textSize="25dp"
             android:gravity="center"
-            android:id="@+id/textView_personaje"/>
+            android:id="@+id/celda_textView_personaje"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Programa personaje"
             android:textSize="20dp"
             android:gravity="center"
-            android:id="@+id/textView_programa"/>
+            android:id="@+id/celda_textView_programa"/>
 
     </LinearLayout>
 
