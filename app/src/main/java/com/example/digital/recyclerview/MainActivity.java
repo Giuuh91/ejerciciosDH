@@ -2,6 +2,7 @@ package com.example.digital.recyclerview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
@@ -22,7 +23,12 @@ public class MainActivity extends AppCompatActivity {
 
          List<Personaje> personajes = cargarPersonajes();
 
-        new PersonajeAdapter(personajes);
+         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
+         PersonajeAdapter personajesAdapter = new PersonajeAdapter(personajes);
+
+         recyclerViewPersonajes.setLayoutManager(linearLayoutManager);
+         recyclerViewPersonajes.setAdapter(personajesAdapter);
+
 
     }
     private List<Personaje> cargarPersonajes(){
