@@ -65,7 +65,7 @@ public class PersonajeAdapter extends RecyclerView.Adapter {
         public void bind(Personaje unPersonaje){
             nombrePersonaje.setText(unPersonaje.getNombre());
             programaPersonaje.setText(unPersonaje.getPrograma());
-
+            imageViewPersonaje.setImageResource(unPersonaje.getImagenPersonaje());
         }
     }
 }
