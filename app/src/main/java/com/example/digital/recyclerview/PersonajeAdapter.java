@@ -47,5 +47,11 @@ public class PersonajeAdapter extends RecyclerView.Adapter {
            nombrePersonaje = itemView.findViewById(R.id.celda_textView_personaje);
            programaPersonaje = itemView.findViewById(R.id.celda_textView_programa);
         }
+
+        public void bind(Personaje unPersonaje){
+            nombrePersonaje.setText(unPersonaje.getNombre());
+            programaPersonaje.setText(unPersonaje.getPrograma());
+            
+        }
     }
 }
